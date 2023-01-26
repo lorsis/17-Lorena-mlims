@@ -71,6 +71,9 @@ header {
   flex-flow: row wrap;
   display: flex;
   justify-content: center;
+  background: url(/Imagenes/fondo.png);
+
+  
 }
 
 body>* {
@@ -262,14 +265,28 @@ nav ul {
 nav li {
   margin: 0 10px;
 }
-
-.push-right {
-  margin-left: auto;
+iframe{
+  display: block;
+  margin: auto;
 }
 img{
   display: block;
   margin: auto;
-  padding: 10px;
-
 }
+
+
+.push-right {
+  margin-left: auto;
+}
+.container{
+  justify-content: center;
+}
+.gallery{
+  width: 350px;
+  margin: 0 5px;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+}
+
 
