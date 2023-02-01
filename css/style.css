@@ -1,3 +1,92 @@
+* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container-fluid {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Flex Grid */
+
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
 /* || General setup */
 
 html, body {
@@ -52,7 +141,7 @@ h2 {
 h3 {
   font-size: 1.1rem;
   font-family: 'Raleway', sans-serif;
-  color: #A3EBB1;
+  color: #f70b0b;
 }
 
 p, li {
@@ -71,9 +160,9 @@ header {
   flex-flow: row wrap;
   display: flex;
   justify-content: center;
-  background: url(/Imagenes/fondo.png);
-
-  
+  background-image: url(/task498/Imagenes/fondo.png);
+  background-position:inherit;
+  background-size: cover;
 }
 
 body>* {
@@ -221,6 +310,9 @@ dt {
 figure img {
   width: 100%;
 }
+figure {
+  margin: auto;
+}
 
 section img {
   width: 80%;
@@ -269,26 +361,39 @@ nav li {
 iframe{
   display: block;
   margin: auto;
+  margin-top: 10px;
 }
 img{
   display: block;
   margin: auto;
   margin-bottom: 35px;
 }
-
-
-.push-right {
-  margin-left: auto;
-}
-.container{
-  justify-content: center;
-}
 .gallery{
-  width: 350px;
-  margin: 0 5px;
-  border-radius: 15px;
-  display: block;
-  margin: auto;
-  margin-bottom: 35px;
+display: flex;
+width: 80%;
+}
+p{
+  padding-left: 450px;
+  padding-right: 450px;
+  text-align: justify;
+}
 
+form{
+  margin:auto;
+  width: 400px;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 20px;
+}
+
+label {
+  display:inline-block;
+  margin-left: 20px;
+}
+#pseaside{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+figcaption{
+  text-align: center;
 }

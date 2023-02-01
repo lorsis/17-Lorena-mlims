@@ -43,17 +43,30 @@
 
         <form>
             <fieldset>
+
                 <legend>Formulario</legend>
-                <p>
+
                     <label> Name: <input name="firstName"></label>
-                </p>
-                <p>
+
                     <label>Last name: <input name="lastName"></label>
-                </p>
-                <p>
+
                     <label>Email:<input type="email" name="email"></label>
-                </p>
-                <p>
+                    <label>
+                        <span>Number of persons:</span>
+                        <input type="number" name="number">
+                        <span aria-label="required"></span>
+                    </label>
+                    <label>
+                        <span>Persons:</span>
+                        <input type="checkbox" name="button" value="1">Adults
+                        <input type="checkbox" name="button" value="2">Children
+                    </label>
+                    <label>
+                        <span>Do you prefer:</span>
+                        <input type="radio" name="boton" value="1">Mountain
+                        <input type="radio" name="boton" value="2">Valleys
+                        <input type="radio" name="boton" value="3">Capes
+                    </label>
                     <label>
                         Messager :
                         <br>
@@ -61,10 +74,10 @@
                     </label>
                     <button type="submit">Enviar</button>
                     <button type="submit">Reset</button>
-                </p>
 
             </fieldset>
         </form>
+
     </article>
     <footer>
 
